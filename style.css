@@ -1,0 +1,90 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  color: antiquewhite;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.todo {
+  width: 400px;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+h1 {
+  margin-bottom: 20px;
+}
+todoInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  background: lightslategrey;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  .filters {
+    margin-top: 20px;
+  }
+}
+button {
+  background: #4b6cb7;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #4b6cb7;
+}
+li.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+.todo-list li input[type="checkbox"] {
+  margin-right: 1rem;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.filters span {
+  flex: 1;
+}
+
+.filters.filter {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.filters .filter.active {
+  border-bottom: 2px solid #4b6cb7;
+}
+
+.clear-completed {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
