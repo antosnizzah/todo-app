@@ -9,24 +9,29 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+  align-items: center;
 }
 .todo {
   width: 400px;
-  height: 100%;
-
   background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
 }
 h1 {
   margin-bottom: 20px;
 }
-todoInput {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+#todoInput {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto 1rem auto;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 li {
   background: lightslategrey;
@@ -35,9 +40,7 @@ li {
   border-radius: 4px;
   display: flex;
   align-items: center;
-  .filters {
-    margin-top: 20px;
-  }
+  justify-content: space-between;
 }
 button {
   background: #4b6cb7;
@@ -49,14 +52,23 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #4b6cb7;
+  background: #3950a1;
+}
+.deleteBtn {
+  background: #ff4b4b;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background: #ff0000;
 }
 li.completed {
   text-decoration: line-through;
   color: #777;
-}
-.todo-list li input[type="checkbox"] {
-  margin-right: 1rem;
 }
 .filters {
   display: flex;
@@ -64,23 +76,19 @@ li.completed {
   align-items: center;
   margin-top: 1rem;
 }
-
 .filters span {
   flex: 1;
 }
-
-.filters.filter {
+.filters .filter {
   background: none;
   border: none;
   color: white;
   cursor: pointer;
   margin: 0 0.5rem;
 }
-
 .filters .filter.active {
   border-bottom: 2px solid #4b6cb7;
 }
-
 .clear-completed {
   background: none;
   border: none;
