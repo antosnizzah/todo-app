@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         label.textContent = todoText;
 
         const deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "Delete";
+        deleteBtn.textContent = "X";
         deleteBtn.classList.add("deleteBtn");
 
         li.appendChild(checkbox);
