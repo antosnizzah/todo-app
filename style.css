@@ -23,7 +23,7 @@ h1 {
 }
 #todoInput {
   display: block;
-  width: calc(100% - 20px);
+
   margin: 0 auto 1rem auto;
   padding: 10px;
   border: none;
